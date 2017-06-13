@@ -13,4 +13,4 @@ This repository has the scripts and a sample code to show the ease of use for th
 ./run_script.sh
 ```
 
-* After the script has run sucessfully, the _combined\_logs.txt_ file and a file in the _perf\_log_ directory would be created which contain all the logs.
+* After the script has run sucessfully, the _combined\_logs.txt_ file and a file in the _perf\_log_ directory would be created which contain the data regarding the execution times and perf-tool data respectively.
