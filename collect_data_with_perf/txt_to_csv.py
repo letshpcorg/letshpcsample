@@ -27,13 +27,14 @@ field_names_basic_metrics = ["n", "p", "run_id", "algS", "e2eS"]
 field_names_perf_metrics = []
 
 csv_wrtiter_basic_metrics = csv.DictWriter(open(csv_file_basic_metrics_name, 'wb'), field_names_basic_metrics)
-csv_wrtiter_perf_metrics = csv.DictWriter(open(csv_file_perf_metrics_name, 'wb'), field_names_perf_metrics)
+
 
 		
 with open(txt_file_name, 'r') as txt_file:
 	for line in txt_file:
 		lineCount += 1
-
+		if lineCount == 0:
+			field_names_perf_metrics = line.split(",")[2:5] + line.split(",")[9:]
 		seq = line.split(',')
 		dictionary = {}
 
@@ -54,6 +55,7 @@ with open(txt_file_name, 'r') as txt_file:
 			lineCount = 0
 			run_id += 1
 
+csv_wrtiter_perf_metrics = csv.DictWriter(open(csv_file_perf_metrics_name, 'wb'), field_names_perf_metrics)
 with open(txt_file_name, 'r') as txt_file:
 	for line in txt_file:
 		lineCount += 1
