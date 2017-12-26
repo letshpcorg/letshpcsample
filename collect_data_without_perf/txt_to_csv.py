@@ -12,7 +12,6 @@ import maps
 with open("codes_run_file") as f:
 	prob = f.read().split("-")
 
-#numProblemSizes = maps.problem_size["divide_and_conquer"]
 numProblemSizes = maps.problem_size[prob[2]]
 
 lineCount = 0
