@@ -1,4 +1,4 @@
-Regarding code modification and running using script
+##Regarding code modification and running using script
 
 1. See codes on github repo "https://github.com/letshpcorg/letshpcsample" and modify your codes accordingly so that they can be run automatically using script.
 2. E2E is the total time for which the code runs while ALG is the time of the parallel part in the code. Put these two in your code properly before running the script.
@@ -12,7 +12,7 @@ Regarding code modification and running using script
 
 
 
-Generating graphs
+##Generating graphs
 
 1. Use Google Chrome for this part.
 2. Go to letshpc.herokuapp.com
@@ -23,7 +23,7 @@ Generating graphs
 7. Export all the necessary graphs.
 
 
-Writing report
+##Writing report
 
 1. Use Google Chrome for this part.
 2. Select Report Generator Tool in letshpc.herokuapp.com
