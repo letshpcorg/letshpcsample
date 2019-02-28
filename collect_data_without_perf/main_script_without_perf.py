@@ -294,7 +294,7 @@ for each_code in [code_to_run]:
     parallel = None
     for each_file in all_files:
         if 'clean' not in each_file.lower() and 'logs'!=each_file.lower() and 'output'!=each_file.lower():
-            if 'par' not in each_file.lower() and each_file!="ser":
+            if 'serial' in each_file.lower():
                 serial = each_file
             elif 'parallel' in each_file.lower():
                 parallel = each_file
