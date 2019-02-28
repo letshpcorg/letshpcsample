@@ -10,7 +10,11 @@ combined_file = open(os.getcwd() + "/" + name_of_combined_file, "w")
 for each_code in all_codes:
     if each_code == "progress.txt":
         continue
-    files = os.listdir(base + each_code + "/logs/")
+    try:
+        files = os.listdir(base + each_code + "/logs/")
+    except OSError:
+        print "\t Error: Logs in " + each_code + " doesn't exist." 
+        continue  
     main_file = None
     for each in files:
         if 'logs' in each and 'perf' not in each:
